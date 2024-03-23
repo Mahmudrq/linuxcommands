@@ -1,0 +1,49 @@
+mkdir 1. pwd -> Shows current path
+2. ls -> Shows list of files and Folders
+3. mkdir folder name -> Make a directory
+4. ~ = Home 
+5. $ = Path end 
+6. cd -> Change directory
+7. mkdir Have\ Mercy -> Creating a Folder incuding a space
+8. rmdir folder name -> Remove a directory
+9. rmdir folder1 folder2 ... -> Remove multiple directory
+10. mkdir folder name / new folder name -> Make a new folder directory inside folder name 
+11. ls -a -> Shows everything , here '-' means Option all hidden files
+12. ls -l -> Shows the author of every files and folder
+13. ls -t -> Shows the last modified file and folder in front of the list.
+14. nano file name -> Write something in files and then ctrl x then type y then enter
+15. mv file name to destination directory -> It will move file to destination directory if it is exist or it will rename it 
+16. cp file name to destination -> Copy a file to destination
+17. cat file name -> Shows what that file carrying
+18. cat -n file name -> Print the text with line number
+19. cat -e file name -> Shows $ sign end of the line 
+20. find -name '*.txt' -> Shows all the .txt files
+21. cat -ne/-en file name -> Shows both line number and end of the line
+22. cat file name1 > file name2 -> It will override all text from file name1 to file name2
+23. cat file name1 >> file name2 -> It will append all text from file name1 to file name2
+24. cat file name1 file name2 >> file name2 -> It will appending all text from f1, f2 to f2
+25. wc -l file name -> It will show the line number of that file name
+26. wc -w file name or folder -> It will show the word number in that file or folder
+27. wc -m file or folder name -> It will show the number of character in that file or directory
+28. wc -lmw/wml file name or folder name -> It will show number of line and word and character in that file or directory
+29. wc -c file name or folder name -> Shows how many bytes of that file contains
+30. cat -n file name | wc -w -> Shows the number of word in that file
+31. head -3 file name -> Shows the first 3 lines of that file 
+31. tail -3 file name -> Shows the last 3 lines of that file
+32. head -n 3 file name -> Here 3 is the argument of -n 
+33. head file name1 file name2 -> shows two files first 10 lines
+34. grep -o 'a' file name -> Shows a in that file -o means only match part
+35. grep -i 'R' file name -> shows all r in the file case insensitive 
+36. grep -w 'word' file name -> Shows the word of that file
+37. grep -io 'txt' file name -> Shows match part and case insensitive
+38. grep -iow 'txt' file name -> shows matched and case insensitive word in that file
+39. find file name -name '*.txt' 
+40. find . -type f  -name 'm*l.txt'
+41. find . -type f  -iname 'p*m*l.*'
+42. find . -type f -name "*.pdf" -exec rm -f {} \;
+43. find . -type f -name "*.txt" -exec cat {} \; | wc -lw
+44. grep -oi 'this' abc.txt | wc -w
+45. grep -i 'c' batman.txt | wc -l
+46. grep -owi 'man' batman.txt | wc -w
+47. head -n 9 result.txt | grep -oi 'txt' | wc -w
+48. tail -n 3 superman.txt | grep -o 'this' | wc -w
